@@ -1,0 +1,40 @@
+@mixin style-list() {
+    padding-left: 0;
+    list-style: none;
+}
+
+@mixin center($width) {
+    position: absolute;
+    width: $width;
+    left: 50%;
+    margin-left: -($width/2);
+}
+
+
+@mixin text-rlw-reg() {
+    font-family: 'RalewayRegular';
+    font-weight: normal;
+    color: #fff;
+    font-size: 14px;
+}
+@mixin text-tel() {
+    font-family: 'RobotoBold';
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+@mixin text-title() {
+    font-family: 'PFCentroSlabProMedium';
+    font-weight: normal;
+    color: #2c3949;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@mixin text-semi() {
+    font-family: 'RalewaySemiBold';
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+}

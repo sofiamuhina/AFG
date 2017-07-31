@@ -1,0 +1,13 @@
+.deals {
+    background-color: #f9f9f9;
+}
+
+.deals__center{
+    width: 1132px;
+    height: 1087px;
+    margin: auto;
+}
+
+.deals__title {
+    @include text-title();
+}

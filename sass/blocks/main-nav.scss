@@ -1,0 +1,11 @@
+.main-nav {
+    margin: 0 auto;
+}
+.main-nav__list {
+    @include style-list();
+    display: flex;
+}
+.main-nav__item {
+    @include text-rlw-reg();
+    margin-left: 20px;
+}

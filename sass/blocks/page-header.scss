@@ -1,0 +1,87 @@
+.page-header {
+    position: relative;
+    height: 798px;
+    background-color: rgba(60, 81, 104, 0.97);
+    max-width: $width-desc;
+    z-index: -5;
+}
+
+.page-header__bg {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 798px;
+    background: url(../../img/header_bg.jpg);
+    opacity: .15;
+}
+
+.page-header__center {
+    width: 1140px;
+    margin: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-header__top {
+    height: 100px;
+    display: flex;
+    padding-top: 50px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.page-header__logo img {
+    width: 100px;
+    height: 48px;
+}
+.page-header__tel {
+    @include text-tel();
+    margin-top: 15px;
+}
+
+.page-header__company {
+    margin-top: 190px;
+}
+
+.page-header__title {
+    font-family: 'PFCentroSlabProMedium';
+    font-weight: normal;
+    color: #fff;
+    font-size: 48px;
+    position: relative;
+    margin-bottom: 50px;
+    &:after {
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        content: "";
+        width: 556px;
+        height: 8px;
+        background-color: $details-color;
+    }
+}
+
+.page-header__offers {
+    @include style-list();
+    
+}
+
+.page-header__item-offer {
+    @include text-semi();
+    margin-bottom: 10px;
+    margin-left: 18px;
+    position: relative;
+    &:before {
+        position: absolute;
+        content: "";
+        background: url(../../img/Polygon%201.svg);
+        width: 6px;
+        height: 11px;
+        left: -18px;
+        top: 5px;
+    }
+}
