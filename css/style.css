@@ -37,6 +37,13 @@ body {
   background-color: rgba(60, 81, 104, 0.97);
   max-width: 1920px;
   z-index: -5; }
+  .page-header:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 7px;
+    bottom: 0;
+    background: url(../../img/wave.png); }
 
 .page-header__bg {
   position: absolute;
@@ -198,31 +205,114 @@ body {
   font-family: 'PFCentroSlabProBold';
   color: #111111;
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  height: 45px; }
   .btn--request {
     width: 176px;
-    height: 45px;
     margin-top: 30px;
     position: absolute;
     width: 176px;
     left: 50%;
     margin-left: -88px; }
+  .btn--mark {
+    margin-top: 70px;
+    position: absolute;
+    width: 235px;
+    left: 50%;
+    margin-left: -117.5px; }
+  .btn--deals {
+    margin-top: 60px;
+    position: absolute;
+    width: 301px;
+    left: 50%;
+    margin-left: -150.5px; }
+  .btn--account {
+    margin-top: 70px;
+    position: absolute;
+    width: 371px;
+    left: 50%;
+    margin-left: -185.5px; }
+  .btn--advantages {
+    margin-top: 60px;
+    position: absolute;
+    width: 254px;
+    left: 50%;
+    margin-left: -127px; }
+  .btn--working {
+    margin-top: 60px;
+    position: absolute;
+    width: 247px;
+    left: 50%;
+    margin-left: -123.5px; }
 
 .mark {
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  position: relative; }
 
-.mark__center {
+.mark__list {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
   width: 1088px;
-  height: 1267px;
   margin: auto; }
 
-.mark__title {
+.mark__item {
+  width: 278px;
+  margin-top: 115px; }
+  .mark__item--left {
+    margin-right: 145px; }
+  .mark__item--middle {
+    margin-right: 100px; }
+
+.mark__offer-title {
   font-family: 'PFCentroSlabProMedium';
+  text-decoration: underline;
+  color: #f39f18;
+  font-size: 22px;
+  margin-bottom: 20px; }
+
+.mark__offer-more {
+  font-family: 'RalewayRegular';
   font-weight: normal;
-  color: #2c3949;
-  font-size: 30px;
-  text-transform: uppercase;
-  text-align: center; }
+  color: #fff;
+  font-size: 14px;
+  color: #111111;
+  position: relative; }
+  .mark__offer-more:after {
+    position: absolute;
+    content: '';
+    width: 230px;
+    height: 1px;
+    background-color: #dee1e5;
+    bottom: -14px;
+    left: 0; }
+  .mark__offer-more--inverse {
+    color: #f3f3f3; }
+
+/*.mark__logo {
+    width: 100%;
+    height: 956px;
+    background: url(../../img/block1.1.svg);
+    position: absolute;
+}*/
+.mark__wrapper-btn {
+  width: 100%;
+  height: 178px;
+  background-color: #2c3949;
+  margin-top: 115px;
+  position: relative; }
+  .mark__wrapper-btn:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 7px;
+    bottom: 0;
+    background: url(../../img/wave.png); }
 
 .deals {
   background-color: #f9f9f9; }
@@ -239,3 +329,550 @@ body {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center; }
+
+.deals__list {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1140px;
+  margin: auto;
+  margin-top: 65px; }
+
+.deals__subtitle {
+  width: 630px;
+  margin: auto;
+  font-family: 'PFCentroSlabProMedium';
+  font-weight: normal;
+  color: #2c3949;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30px; }
+
+.deals__item {
+  width: 170px;
+  height: 38px;
+  font-family: 'RalewayBold';
+  font-weight: normal;
+  font-size: 13px;
+  color: #333333;
+  line-height: 16px;
+  text-decoration: underline;
+  color: #111111;
+  padding-top: 135px;
+  text-align: center;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 100px; }
+  .deals__item:nth-child(1):before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+    background: url(../../img/icons/section_2/Layer1.png) no-repeat; }
+  .deals__item:nth-child(2):before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+    left: 52px;
+    background: url(../../img/icons/section_2/Layer2.png) no-repeat; }
+  .deals__item:nth-child(3):before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+    left: 44px;
+    background: url(../../img/icons/section_2/Layer3.png) no-repeat; }
+  .deals__item:nth-child(4):before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+    left: 37px;
+    background: url(../../img/icons/section_2/Layer4.png) no-repeat; }
+  .deals__item:nth-child(5):before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+    left: 55px;
+    background: url(../../img/icons/section_2/Layer5.png) no-repeat; }
+  .deals__item:nth-child(6):before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+    background: url(../../img/icons/section_2/Layer6.png) no-repeat; }
+  .deals__item:nth-child(7):before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+    background: url(../../img/icons/section_2/Layer7.png) no-repeat; }
+  .deals__item:nth-child(7) {
+    margin-left: 190px; }
+  .deals__item:nth-child(8):before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+    left: 57px;
+    background: url(../../img/icons/section_2/Layer8.png) no-repeat; }
+  .deals__item:nth-child(9):before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+    background: url(../../img/icons/section_2/Layer9.png) no-repeat; }
+  .deals__item:nth-child(10):before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+    left: 45px;
+    background: url(../../img/icons/section_2/Layer10.png) no-repeat; }
+  .deals__item:after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 1px;
+    top: 120px;
+    left: 55px;
+    background-color: #f39f18; }
+
+.deals__wrapper-btn {
+  width: 100%;
+  height: 162px;
+  background-color: #e5e5e5;
+  margin-top: 30px;
+  position: relative; }
+  .deals__wrapper-btn:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 7px;
+    bottom: 0;
+    background: url(../../img/wave2.png); }
+
+.heading-block {
+  padding-top: 80px;
+  max-width: 944px;
+  margin: auto; }
+
+.heading-block__title {
+  font-family: 'PFCentroSlabProMedium';
+  font-weight: normal;
+  color: #2c3949;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px; }
+  .heading-block__title--blue {
+    color: #f9f9f9; }
+  .heading-block__title:after {
+    position: absolute;
+    content: "";
+    width: 165px;
+    height: 4px;
+    background-color: #f39f18;
+    bottom: -26px;
+    position: absolute;
+    width: 165px;
+    left: 50%;
+    margin-left: -82.5px; }
+
+.heading-block__desc {
+  font-family: 'RalewayRegular';
+  font-weight: normal;
+  color: #fff;
+  font-size: 14px;
+  color: #333333;
+  font-size: 15px;
+  text-align: center; }
+  .heading-block__desc--blue {
+    color: #e5e5e5; }
+
+.heading-block__text-bold {
+  font-family: 'RalewayBold'; }
+
+.account {
+  background-color: #2c3949;
+  position: relative; }
+  .account:after {
+    position: absolute;
+    content: '';
+    width: 850px;
+    height: 850px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -425px;
+    top: 280px;
+    background-color: #303e4e; }
+
+.account__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  width: 1060px;
+  margin: auto;
+  margin-top: 80px;
+  position: relative;
+  z-index: 2; }
+  .account__list:before {
+    position: absolute;
+    content: '';
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -65px;
+    top: 50%;
+    margin-top: -65px;
+    background-color: #f39f18; }
+  .account__list:after {
+    position: absolute;
+    content: '';
+    width: 72px;
+    height: 73px;
+    left: 50%;
+    margin-left: -36px;
+    top: 50%;
+    margin-top: -36px;
+    background: url(../../img/icons/section_3/Layer.png); }
+
+.account__offer-title {
+  font-family: 'PFCentroSlabProMedium';
+  text-decoration: underline;
+  color: #f39f18;
+  font-size: 22px;
+  margin-bottom: 20px; }
+
+.account__offer-more {
+  font-family: 'RalewayRegular';
+  font-weight: normal;
+  color: #fff;
+  font-size: 14px;
+  color: #f3f3f3;
+  position: relative; }
+
+.account__item {
+  max-width: 256px;
+  z-index: 2;
+  position: relative; }
+  .account__item:nth-child(1) {
+    margin-left: 400px;
+    margin-right: 400px; }
+    .account__item:nth-child(1):after {
+      position: absolute;
+      content: '';
+      width: 14px;
+      height: 116px;
+      background: url(../../img/icons/section_3/Ellipse.png);
+      bottom: -150px;
+      left: 120px; }
+  .account__item:nth-child(2) {
+    margin-left: 100px;
+    margin-right: 385px; }
+    .account__item:nth-child(2):after {
+      position: absolute;
+      content: '';
+      width: 14px;
+      height: 116px;
+      background: url(../../img/icons/section_3/Ellipse.png);
+      transform: rotate(-55deg);
+      bottom: -100px;
+      right: -30px; }
+  .account__item:nth-child(3):after {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 116px;
+    background: url(../../img/icons/section_3/Ellipse.png);
+    transform: rotate(55deg);
+    bottom: -100px;
+    left: -70px; }
+  .account__item:nth-child(4) {
+    margin-right: 545px;
+    margin-top: 80px; }
+    .account__item:nth-child(4):after {
+      position: absolute;
+      content: '';
+      width: 14px;
+      height: 116px;
+      background: url(../../img/icons/section_3/Ellipse.png);
+      transform: rotate(-90deg);
+      bottom: -15px;
+      right: -100px; }
+  .account__item:nth-child(5) {
+    margin-top: 80px; }
+    .account__item:nth-child(5):after {
+      position: absolute;
+      content: '';
+      width: 14px;
+      height: 116px;
+      background: url(../../img/icons/section_3/Ellipse.png);
+      transform: rotate(90deg);
+      bottom: -15px;
+      left: -100px; }
+  .account__item:nth-child(6) {
+    margin-left: 100px;
+    margin-right: 390px;
+    margin-top: 80px; }
+    .account__item:nth-child(6):after {
+      position: absolute;
+      content: '';
+      width: 14px;
+      height: 116px;
+      background: url(../../img/icons/section_3/Ellipse.png);
+      transform: rotate(-125deg);
+      bottom: 85px;
+      right: -40px; }
+  .account__item:nth-child(7) {
+    margin-top: 80px; }
+    .account__item:nth-child(7):after {
+      position: absolute;
+      content: '';
+      width: 14px;
+      height: 116px;
+      background: url(../../img/icons/section_3/Ellipse.png);
+      transform: rotate(125deg);
+      bottom: 85px;
+      left: -80px; }
+  .account__item:nth-child(8) {
+    margin-left: 400px;
+    margin-right: 390px; }
+    .account__item:nth-child(8):after {
+      position: absolute;
+      content: '';
+      width: 14px;
+      height: 116px;
+      background: url(../../img/icons/section_3/Ellipse.png);
+      transform: rotate(-180deg);
+      top: -140px;
+      right: 124px; }
+
+.account__wrapper-btn {
+  width: 100%;
+  height: 178px;
+  background-color: #394b5f;
+  margin-top: 115px;
+  position: relative; }
+
+.advantages {
+  background-color: #e5e5e5; }
+
+.advantages__subtitle {
+  width: 600px;
+  margin: auto;
+  font-family: 'PFCentroSlabProMedium';
+  font-weight: normal;
+  color: #2c3949;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30px; }
+
+.advantages__list {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 850px;
+  margin: auto;
+  margin-top: 65px; }
+
+.advantages__item {
+  width: 262px;
+  height: 377px;
+  background-color: #2c3949;
+  margin-right: 30px;
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box; }
+  .advantages__item:before {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -60px;
+    top: 57px;
+    background-color: #f39f18; }
+  .advantages__item:nth-child(3) {
+    margin-right: 0; }
+    .advantages__item:nth-child(3):after {
+      position: absolute;
+      content: '';
+      width: 68px;
+      height: 67px;
+      left: 50%;
+      margin-left: -34px;
+      top: 85px;
+      background: url(../../img/icons/section_4/3.png); }
+  .advantages__item:nth-child(2):after {
+    position: absolute;
+    content: '';
+    width: 73px;
+    height: 47px;
+    left: 50%;
+    margin-left: -37px;
+    top: 92px;
+    background: url(../../img/icons/section_4/2.png); }
+  .advantages__item:nth-child(1):after {
+    position: absolute;
+    content: '';
+    width: 79px;
+    height: 30px;
+    left: 50%;
+    margin-left: -40px;
+    top: 103px;
+    background: url(../../img/icons/section_4/1.png); }
+
+.advantages__item-title {
+  font-family: 'RalewayBold';
+  font-weight: normal;
+  font-size: 13px;
+  color: #333333;
+  font-size: 16px;
+  color: #e5e5e5;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 212px;
+  margin-bottom: 23px; }
+
+.advantages__item-more {
+  font-family: 'RalewayRegular';
+  font-weight: normal;
+  color: #fff;
+  font-size: 14px;
+  color: #97a4b2;
+  text-align: center; }
+
+.advantages__wrapper-btn {
+  width: 100%;
+  height: 165px;
+  background-color: #d6d6d6;
+  margin-top: 60px;
+  position: relative; }
+
+.working {
+  background-color: #2c3949; }
+
+.working__list {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 1097px;
+  margin: auto; }
+
+.working__wrapper {
+  background: url(../../img/icons/section_5/Rectangle1.png);
+  z-index: 10;
+  width: 307px;
+  height: 139px; }
+  .working__wrapper:nth-child(1) {
+    position: relative; }
+    .working__wrapper:nth-child(1):after {
+      position: absolute;
+      content: '';
+      width: 43px;
+      height: 48px;
+      left: 55px;
+      top: 48px;
+      background: url(../../img/icons/section_5/Layer1.png); }
+  .working__wrapper:nth-child(2) {
+    z-index: 9;
+    margin-left: -44px;
+    position: relative; }
+    .working__wrapper:nth-child(2):after {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 44px;
+      left: 60px;
+      top: 48px;
+      background: url(../../img/icons/section_5/Layer2.png); }
+  .working__wrapper:nth-child(3) {
+    z-index: 8;
+    margin-left: -44px;
+    position: relative; }
+    .working__wrapper:nth-child(3):after {
+      position: absolute;
+      content: '';
+      width: 31px;
+      height: 43px;
+      left: 63px;
+      top: 48px;
+      background: url(../../img/icons/section_5/Layer3.png); }
+  .working__wrapper:nth-child(4) {
+    z-index: 7;
+    margin-left: -44px;
+    position: relative; }
+    .working__wrapper:nth-child(4):after {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 45px;
+      left: 60px;
+      top: 48px;
+      background: url(../../img/icons/section_5/Layer4.png); }
+
+.working__item {
+  font-family: 'PFCentroSlabProMedium';
+  font-size: 18px;
+  color: #f9f9f9;
+  text-decoration: underline;
+  margin-left: 118px;
+  margin-right: 40px;
+  margin-top: 45px; }
+
+.working__wrapper-btn {
+  width: 100%;
+  height: 178px;
+  background-color: #394b5f;
+  margin-top: 60px;
+  position: relative; }

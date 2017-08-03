@@ -30,7 +30,7 @@
 }
 
 .request__desc {
-    @include text-rlw-reg();
+    @include text-main();
     color: #97a4b2;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .request__label {
-    @include text-rlw-reg();
+    @include text-main();
     color: #97a4b2;
     margin-bottom: 8px;
 }

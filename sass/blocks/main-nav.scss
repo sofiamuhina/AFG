@@ -6,6 +6,6 @@
     display: flex;
 }
 .main-nav__item {
-    @include text-rlw-reg();
+    @include text-main();
     margin-left: 20px;
 }

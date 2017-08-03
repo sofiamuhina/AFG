@@ -6,10 +6,30 @@
     color: #111111;
     font-size: 20px;
     font-weight: bold;
+    height: 45px;
     &--request {
         width: 176px;
-        height: 45px;
         margin-top: 30px;
         @include center(176px);
+    }
+    &--mark {
+        margin-top: 70px;
+        @include center(235px);
+    }
+    &--deals {
+        margin-top: 60px;
+        @include center(301px);
+    }
+    &--account {
+        margin-top: 70px;
+        @include center(371px);
+    }
+    &--advantages {
+        margin-top: 60px;
+        @include center(254px);
+    }
+    &--working {
+        margin-top: 60px;
+        @include center(247px);
     }
 }

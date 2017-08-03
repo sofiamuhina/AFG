@@ -10,8 +10,7 @@
     margin-left: -($width/2);
 }
 
-
-@mixin text-rlw-reg() {
+@mixin text-main() {
     font-family: 'RalewayRegular';
     font-weight: normal;
     color: #fff;
@@ -32,9 +31,26 @@
     text-align: center;
 }
 
-@mixin text-semi() {
-    font-family: 'RalewaySemiBold';
-    font-weight: bold;
-    color: #fff;
-    font-size: 18px;
+@mixin text-bold() {
+    font-family: 'RalewayBold';
+    font-weight: normal;
+    font-size: 13px;
+    color: #333333;
+}
+
+@mixin deals-img() {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50px;
+}
+
+@mixin account-img() {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 116px;
+    background: url(../../img/icons/section_3/Ellipse.png);
 }
