@@ -1,5 +1,8 @@
 .main-nav {
     margin: 0 auto;
+    &--footer {
+        opacity: .65;
+    }
 }
 .main-nav__list {
     @include style-list();
@@ -8,4 +11,9 @@
 .main-nav__item {
     @include text-main();
     margin-left: 20px;
+    transition: all 0.4s;
+    &:hover {
+        color: $details_color;
+        text-decoration: underline;
+    }
 }

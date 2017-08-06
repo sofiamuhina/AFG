@@ -1,0 +1,70 @@
+.company {
+    background-color: #e5e5e5;
+    position: relative;
+    z-index: -3;
+    &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 7px;
+        bottom: 0;
+        background: url(../../img/wave2.png);
+    }
+}
+
+.company__center {
+    width: 1144px;
+    margin: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.company__list {
+    @include style-list();
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 90px;
+    padding: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.company__item {
+    padding-top: 95px;
+    width: 170px;
+    height: 100px;
+    @include text-bold();
+    position: relative;
+    text-align: center;
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+    }
+    &:nth-child(1):before {
+        background: url(../../img/icons/section_8/l1.png);
+        height: 72px;
+        @include center(72px);
+    }
+    &:nth-child(2):before {
+        height: 69px;
+        @include center(69px);
+        background: url(../../img/icons/section_8/l2.png);
+    }
+    &:nth-child(3):before {
+        height: 72px;
+        @include center(68px);
+        background: url(../../img/icons/section_8/l3.png);
+    }
+    &:nth-child(4):before {
+        height: 73px;
+        @include center(56px);
+        background: url(../../img/icons/section_8/l4.png);
+    }
+}

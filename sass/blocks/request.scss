@@ -20,6 +20,13 @@
         background-color: rgba(46, 62, 81, 0.8);
         border-bottom: 4px solid #2f3c4b;
     }
+    &--company {
+        margin-left: 25px;
+        margin-top: 90px;
+        &:before {
+            z-index: -2;
+        }
+    }
 }
 
 .request__title {

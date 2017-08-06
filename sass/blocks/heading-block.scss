@@ -20,6 +20,13 @@
         bottom: -26px;
         @include center(165px);
     }
+    &--company {
+        text-align: left;
+        &:after {
+            left: 0;
+            margin-left: 0;
+        }
+    }
 }
 
 .heading-block__desc {
@@ -29,6 +36,9 @@
     text-align: center;
     &--blue {
         color: #e5e5e5;
+    }
+    &--company {
+        text-align: left;
     }
 }
 

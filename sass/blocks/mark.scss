@@ -32,6 +32,9 @@
     color: $details-color;
     font-size: 22px;
     margin-bottom: 20px;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .mark__offer-more {

@@ -112,6 +112,8 @@ body {
   margin-bottom: 10px;
   margin-left: 18px;
   position: relative; }
+  .page-header__item-offer:hover {
+    text-decoration: underline; }
   .page-header__item-offer:before {
     position: absolute;
     content: "";
@@ -124,8 +126,37 @@ body {
 .page-main {
   max-width: 1920px; }
 
+.page-footer {
+  background-color: #2c3949;
+  height: 187px; }
+
+.page-footer__center {
+  width: 1146px;
+  margin: auto;
+  padding-top: 80px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.page-footer__logo img {
+  width: 100px;
+  height: 48px;
+  opacity: .35; }
+
+.page-footer__tel {
+  font-family: 'RobotoBold';
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 15px;
+  opacity: .45; }
+
 .main-nav {
   margin: 0 auto; }
+  .main-nav--footer {
+    opacity: .65; }
 
 .main-nav__list {
   padding-left: 0;
@@ -137,7 +168,11 @@ body {
   font-weight: normal;
   color: #fff;
   font-size: 14px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  transition: all 0.4s; }
+  .main-nav__item:hover {
+    color: #f39f18;
+    text-decoration: underline; }
 
 .request {
   width: 360px;
@@ -160,6 +195,11 @@ body {
     left: 0;
     background-color: rgba(46, 62, 81, 0.8);
     border-bottom: 4px solid #2f3c4b; }
+  .request--company {
+    margin-left: 25px;
+    margin-top: 90px; }
+    .request--company:before {
+      z-index: -2; }
 
 .request__title {
   font-family: 'PFCentroSlabProMedium';
@@ -206,7 +246,10 @@ body {
   color: #111111;
   font-size: 20px;
   font-weight: bold;
-  height: 45px; }
+  height: 45px;
+  transition: all 0.4s; }
+  .btn:hover {
+    background-color: #f4b34b; }
   .btn--request {
     width: 176px;
     margin-top: 30px;
@@ -275,6 +318,8 @@ body {
   color: #f39f18;
   font-size: 22px;
   margin-bottom: 20px; }
+  .mark__offer-title:hover {
+    text-decoration: none; }
 
 .mark__offer-more {
   font-family: 'RalewayRegular';
@@ -466,6 +511,9 @@ body {
     top: 120px;
     left: 55px;
     background-color: #f39f18; }
+  .deals__item:hover {
+    transition: all 0.4s;
+    color: #f39f18; }
 
 .deals__wrapper-btn {
   width: 100%;
@@ -508,6 +556,11 @@ body {
     width: 165px;
     left: 50%;
     margin-left: -82.5px; }
+  .heading-block__title--company {
+    text-align: left; }
+    .heading-block__title--company:after {
+      left: 0;
+      margin-left: 0; }
 
 .heading-block__desc {
   font-family: 'RalewayRegular';
@@ -519,6 +572,8 @@ body {
   text-align: center; }
   .heading-block__desc--blue {
     color: #e5e5e5; }
+  .heading-block__desc--company {
+    text-align: left; }
 
 .heading-block__text-bold {
   font-family: 'RalewayBold'; }
@@ -690,6 +745,13 @@ body {
   background-color: #394b5f;
   margin-top: 115px;
   position: relative; }
+  .account__wrapper-btn:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 7px;
+    bottom: 0;
+    background: url(../../img/wave3.png); }
 
 .advantages {
   background-color: #e5e5e5; }
@@ -719,6 +781,23 @@ body {
   margin: auto;
   margin-top: 65px; }
 
+.advantages__wrapper-img {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -60px;
+  top: 57px;
+  background-color: #f39f18; }
+  .advantages__wrapper-img img {
+    position: absolute;
+    width: 73px;
+    height: 47px;
+    left: 50%;
+    margin-left: -37px;
+    top: 38px; }
+
 .advantages__item {
   width: 262px;
   height: 377px;
@@ -728,45 +807,8 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   box-sizing: border-box; }
-  .advantages__item:before {
-    position: absolute;
-    content: '';
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    left: 50%;
-    margin-left: -60px;
-    top: 57px;
-    background-color: #f39f18; }
   .advantages__item:nth-child(3) {
     margin-right: 0; }
-    .advantages__item:nth-child(3):after {
-      position: absolute;
-      content: '';
-      width: 68px;
-      height: 67px;
-      left: 50%;
-      margin-left: -34px;
-      top: 85px;
-      background: url(../../img/icons/section_4/3.png); }
-  .advantages__item:nth-child(2):after {
-    position: absolute;
-    content: '';
-    width: 73px;
-    height: 47px;
-    left: 50%;
-    margin-left: -37px;
-    top: 92px;
-    background: url(../../img/icons/section_4/2.png); }
-  .advantages__item:nth-child(1):after {
-    position: absolute;
-    content: '';
-    width: 79px;
-    height: 30px;
-    left: 50%;
-    margin-left: -40px;
-    top: 103px;
-    background: url(../../img/icons/section_4/1.png); }
 
 .advantages__item-title {
   font-family: 'RalewayBold';
@@ -794,6 +836,13 @@ body {
   background-color: #d6d6d6;
   margin-top: 60px;
   position: relative; }
+  .advantages__wrapper-btn:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 7px;
+    bottom: 0;
+    background: url(../../img/wave2.png); }
 
 .working {
   background-color: #2c3949; }
@@ -876,3 +925,164 @@ body {
   background-color: #394b5f;
   margin-top: 60px;
   position: relative; }
+  .working__wrapper-btn:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 7px;
+    bottom: 0;
+    background: url(../../img/wave.png); }
+
+.team {
+  position: relative; }
+  .team:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 7px;
+    bottom: 0;
+    background: url(../../img/wave3.png); }
+
+.team__list {
+  padding-left: 0;
+  list-style: none;
+  width: 850px;
+  margin: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding-bottom: 90px; }
+
+.team__item {
+  width: 262px;
+  height: 347px;
+  background-color: #e5e5e5;
+  margin-right: 30px;
+  position: relative; }
+  .team__item:nth-child(3) {
+    margin-right: 0; }
+  .team__item:before {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 120px;
+    top: 40px;
+    position: absolute;
+    width: 120px;
+    left: 50%;
+    margin-left: -60px; }
+  .team__item:nth-child(1):before {
+    background: url(../../img/team/l1.png); }
+  .team__item:nth-child(2):before {
+    background: url(../../img/team/l2.png); }
+  .team__item:nth-child(3):before {
+    background: url(../../img/team/l3.png); }
+
+.team__name {
+  font-family: 'RalewayBold';
+  font-weight: normal;
+  font-size: 13px;
+  color: #333333;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 210px; }
+
+.team__role {
+  font-family: 'RalewayRegular';
+  font-weight: normal;
+  color: #fff;
+  font-size: 14px;
+  color: #6e7b8b;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.team__tel {
+  font-family: 'RobotoBold';
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  font-size: 16px;
+  color: #333333;
+  text-align: center; }
+
+.company {
+  background-color: #e5e5e5;
+  position: relative;
+  z-index: -3; }
+  .company:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 7px;
+    bottom: 0;
+    background: url(../../img/wave2.png); }
+
+.company__center {
+  width: 1144px;
+  margin: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.company__list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 90px;
+  padding: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.company__item {
+  padding-top: 95px;
+  width: 170px;
+  height: 100px;
+  font-family: 'RalewayBold';
+  font-weight: normal;
+  font-size: 13px;
+  color: #333333;
+  position: relative;
+  text-align: center; }
+  .company__item:before {
+    position: absolute;
+    content: '';
+    top: 0; }
+  .company__item:nth-child(1):before {
+    background: url(../../img/icons/section_8/l1.png);
+    height: 72px;
+    position: absolute;
+    width: 72px;
+    left: 50%;
+    margin-left: -36px; }
+  .company__item:nth-child(2):before {
+    height: 69px;
+    position: absolute;
+    width: 69px;
+    left: 50%;
+    margin-left: -34.5px;
+    background: url(../../img/icons/section_8/l2.png); }
+  .company__item:nth-child(3):before {
+    height: 72px;
+    position: absolute;
+    width: 68px;
+    left: 50%;
+    margin-left: -34px;
+    background: url(../../img/icons/section_8/l3.png); }
+  .company__item:nth-child(4):before {
+    height: 73px;
+    position: absolute;
+    width: 56px;
+    left: 50%;
+    margin-left: -28px;
+    background: url(../../img/icons/section_8/l4.png); }

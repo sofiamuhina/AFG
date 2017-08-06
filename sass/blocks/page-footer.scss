@@ -1,0 +1,27 @@
+.page-footer {
+    background-color: #2c3949;
+    height: 187px;
+}
+
+.page-footer__center {
+    width: 1146px;
+    margin: auto;
+    padding-top: 80px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.page-footer__logo img {
+    width: 100px;
+    height: 48px;
+    opacity: .35;
+}
+
+.page-footer__tel {
+    @include text-tel();
+    margin-top: 15px;
+    opacity: .45;
+}

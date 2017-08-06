@@ -103,6 +103,10 @@
         left: 55px;
         background-color: $details_color;
     }
+    &:hover {
+        transition: all 0.4s;
+        color: $details_color;
+    }
 }
 
 .deals__wrapper-btn {
